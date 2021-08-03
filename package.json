@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "dev":""
+    "dev": "nodemon --exec babel-node server",
+    "migrate": "npx prisma migrate dev --preview-feature"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,16 @@
   "bugs": {
     "url": "https://github.com/ZynsolKim/Instaclone-backend/issues"
   },
-  "homepage": "https://github.com/ZynsolKim/Instaclone-backend#readme"
+  "homepage": "https://github.com/ZynsolKim/Instaclone-backend#readme",
+  "dependencies": {
+    "apollo-server": "^3.1.1",
+    "graphql": "^15.5.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.14.8",
+    "@babel/node": "^7.14.9",
+    "@babel/preset-env": "^7.14.9",
+    "nodemon": "^2.0.12",
+    "prisma": "^2.28.0"
+  }
 }
